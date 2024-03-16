@@ -1,0 +1,52 @@
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #a8a8a8;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 0.8rem;
+}
+.title {
+  cursor: pointer;
+}
+.title,
+.content {
+  padding: 0.6rem 1.2rem;
+  background: #fff;
+}
+section.accordion__area {
+  margin-top: 30px;
+}
+.accrdion__wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.accordion__card {
+  overflow: hidden;
+  transition: 0.3s linear;
+}
+
+.content {
+  height: 0px;
+  padding: 0rem 1.2rem;
+}
+.title.active + .content {
+  height: 100%;
+  padding: 0.6rem 1.2rem;
+}
